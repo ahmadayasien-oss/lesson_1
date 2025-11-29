@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link , NavLink } from "react-router";
 
 const Header = () => {
     return (
         <div>
                   <header className="hide-when-mobile">
-    <h1>React Course</h1>
+    <h1><Link to="/"> React Course</Link></h1>
     <ul className="flex">
       <li className="main-list">
-        <a className="main-link" href="/html">
+        <NavLink className="main-link" to="/html">
           {" "}
           HTML{" "}
-        </a>
-        <ul className="sub-ul">
+        </NavLink>
+        {/* <ul className="sub-ul">
           <li>
             <a href="www">Full Course</a>
           </li>
@@ -21,14 +22,14 @@ const Header = () => {
           <li>
             <a href="www">learn in 1h</a>
           </li>
-        </ul>
+        </ul> */}
       </li>
       <li className="main-list">
-        <a className="main-link" href="/css">
+        <NavLink className="main-link" to="/css">
           {" "}
           CSS{" "}
-        </a>
-        <ul className="sub-ul">
+        </NavLink>
+        {/* <ul className="sub-ul">
           <li>
             <a href="www">Full Course</a>
           </li>
@@ -49,13 +50,13 @@ const Header = () => {
               </li>
             </ul>
           </li>
-        </ul>
+        </ul> */}
       </li>
       <li className="main-list">
-        <a className="main-link" href="/javascript">
+        <NavLink className="main-link" to="/javascript">
           {" "}
           JavaScript{" "}
-        </a>
+        </NavLink>
         <ul className="sub-ul sub-of-js">
           <li>
             <a href="www">coming soon🔥</a>
@@ -76,7 +77,7 @@ const Header = () => {
           HTML <i className="fas fa-plus" />{" "}
         </label>
         <input id="html" type="checkbox" />
-        <ul className="sub-div">
+        {/* <ul className="sub-div">
           <li>
             <a href="www">Full Course</a>
           </li>
@@ -86,7 +87,7 @@ const Header = () => {
           <li>
             <a href="www">learn in 1h</a>
           </li>
-        </ul>
+        </ul> */}
       </div>
       <div className="main-div">
         <label htmlFor="css">
