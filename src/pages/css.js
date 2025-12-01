@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../comp/Header';
 import Footer from '../comp/Footer';
-import Maincontent from '../comp/maincontent';
+import Maincontent from '../comp/Maincontent';
 
 const Css = () => {
     return (

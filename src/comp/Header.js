@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link , NavLink } from "react-router";
-
+import { Link, NavLink } from "react-router";
+import './Header.css'
 const Header = () => {
-    return (
-        <div>
-                  <header className="hide-when-mobile">
-    <h1><Link to="/"> React Course</Link></h1>
+  return (
+    <div>
+        <header className="hide-when-mobile malak">
+    <h1><Link to="/">React Course</Link></h1>
     <ul className="flex">
       <li className="main-list">
         <NavLink className="main-link" to="/html">
           {" "}
           HTML{" "}
         </NavLink>
-        {/* <ul className="sub-ul">
+        <ul className="sub-ul">
           <li>
             <a href="www">Full Course</a>
           </li>
@@ -22,14 +22,14 @@ const Header = () => {
           <li>
             <a href="www">learn in 1h</a>
           </li>
-        </ul> */}
+        </ul>
       </li>
       <li className="main-list">
         <NavLink className="main-link" to="/css">
           {" "}
           CSS{" "}
         </NavLink>
-        {/* <ul className="sub-ul">
+        <ul className="sub-ul">
           <li>
             <a href="www">Full Course</a>
           </li>
@@ -50,7 +50,7 @@ const Header = () => {
               </li>
             </ul>
           </li>
-        </ul> */}
+        </ul>
       </li>
       <li className="main-list">
         <NavLink className="main-link" to="/javascript">
@@ -77,7 +77,7 @@ const Header = () => {
           HTML <i className="fas fa-plus" />{" "}
         </label>
         <input id="html" type="checkbox" />
-        {/* <ul className="sub-div">
+        <ul className="sub-div">
           <li>
             <a href="www">Full Course</a>
           </li>
@@ -87,7 +87,7 @@ const Header = () => {
           <li>
             <a href="www">learn in 1h</a>
           </li>
-        </ul> */}
+        </ul>
       </div>
       <div className="main-div">
         <label htmlFor="css">
@@ -133,8 +133,8 @@ const Header = () => {
       </div>
     </div>
   </header>
-        </div>
-    );
+    </div>
+  );
 }
 
 export default Header;
