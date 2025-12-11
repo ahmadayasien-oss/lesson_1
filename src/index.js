@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 
 
@@ -13,7 +13,9 @@ root.render(
   <React.StrictMode>
     
     <BrowserRouter>
+    <HelmetProvider>
     <App/>
+    </HelmetProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

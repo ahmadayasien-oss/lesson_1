@@ -101,8 +101,4 @@
 .mini-projects:hover .sub-sub-ul {
   display: block;
 }
-/* ==================
-    3. header of mobile
-===================== */
-.show-when-mobile {
-  display: none;
+

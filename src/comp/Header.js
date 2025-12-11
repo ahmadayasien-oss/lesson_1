@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router";
 import './Header.css'
 const Header = () => {
   return (
-    <div>
+    <div className='Myheader'>
         <header className="hide-when-mobile malak">
     <h1><Link to="/">React Course</Link></h1>
     <ul className="flex">
